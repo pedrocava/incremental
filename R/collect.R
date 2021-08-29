@@ -41,7 +41,15 @@ collect.incremental_accumulator <- function(accumulator, position) {
 
 collect.incremental_generator <- function(generator, position) {
 
+    if(length(position) == 1) {
 
+        return(purrr::map(1:position, accumulator$rule))
+
+    } else if (length(position) > 1) {
+
+        return(purrr::map(position, accumulator$rule))
+
+    }
 
 }
 
