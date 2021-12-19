@@ -1,5 +1,5 @@
 #'
-#' @param rule a two-argument function, a lambda or anything `purrr::as_mapper` quem work with
+#' @param rule a two-argument function, a lambda or anything `purrr::as_mapper` can work with
 #' 
 #' 
 #' 
